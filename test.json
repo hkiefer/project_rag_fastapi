@@ -1,0 +1,32 @@
+[
+    {
+        "section": "Title",
+        "text": "Modeling the Influence of Multi-Dimensionality and Off-Diagonal Friction Coupling on Dihedral Angle Dynamics using the Multi-Dimensional Generalized Langevin Equation",
+        "page": 1
+    },
+    {
+        "section": "Authors",
+        "text": "Henrik Kiefer, Cihan Ayaz, Benjamin A. Dalton, Roland R. Netz",
+        "page": 1
+    },
+    {
+        "section": "Affiliations",
+        "text": "Institute of Theoretical Physics, Freie Universität Berlin",
+        "page": 1
+    },
+    {
+        "section": "Abstract",
+        "text": "Coarse-graining a complex system to lower-dimensional reaction coordinates is a promising approach to efficiently describe the dynamics of molecular systems. The generalized Langevin equation (GLE) has been shown to be a suitable framework for modeling the effective dynamics of low-dimensional reaction coordinates, especially when non-Markovian effects are important [1]. We introduce a GLE formalism for multi-dimensional reaction coordinates. The GLE includes a memory matrix, whose non-vanishing off-diagonal entries quantify the frictional and non-Markovian coupling between reaction coordinates. We use the GLE model, equipped with a multi-dimensional Markovian embedding scheme, to describe different systems that are characterized by two-dimensional reaction coordinates, namely the dihedral dynamics of pentane and alanine dipeptide, obtained from molecular dynamics (MD) simulations in explicit water. We find significant frictional coupling between the coordinates, originating from the combination of hydrodynamic interactions and internal friction effects. Furthermore, we demonstrate the necessity of using a multi-dimensional GLE to accurately describe the MD dynamics and in particular the mean-first-passage time and the mean-squared displacement.",
+        "page": 1
+    },
+    {
+        "section": "References",
+        "text": "[1] C. Ayaz, L. Tepper, F. N. Brünig, J. Kappler, J. O. Daldrop, and R. R. Netz, PNAS 118, 31 (2021)",
+        "page": 1
+    },
+    {
+        "section": "Traveling Plan",
+        "text": "Departure in Berlin on Tuesday, 01.08.23 - Arrival in Tokyo (Narita) on Wednesday, 02.08.23 (Kyoto has no airport, respectively there are no direct flights from Germany/Europe to Kyoto). Travel to Kyoto by train from Tokyo airport (Narita). Conference “Perspectives on Non-Equilibrium Statistical Mechanics” from Thursday 03.08.23 9:00 to Saturday 05.08.23 17:00. Bridging day until Sunday, 06.08.23 to travel to Tokyo to take part in the “StatPhys28”, which starts on Monday, 07.08.23 09:30",
+        "page": 2
+    }
+]
