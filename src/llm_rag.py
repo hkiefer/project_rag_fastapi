@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Import LangChain and Chroma components (use the community versions, since it gives me DeprecationWarning)
+# Import LangChain and Chroma components (use the community versions, since it gives me DeprecationWarning otherwise)
 from langchain_community.vectorstores import Chroma
 from langchain_community.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
@@ -26,11 +26,11 @@ def create_qa_chain(vector_db: Chroma) -> RetrievalQA:
         - "Page number": The page number(s) where the answer is found.
         - "Additional Metadata": Any other relevant metadata.
 
-        JSON
         """
     prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
 
     llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
+    
     retriever = vector_db.as_retriever(search_kwargs={"k": 3})
 
     qa_chain = RetrievalQA.from_chain_type(

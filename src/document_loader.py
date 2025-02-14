@@ -6,19 +6,23 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 import logging
 logging.getLogger("pypdf").setLevel(logging.ERROR)
 
-import sys
-sys.path.append('../resources')
+import os
 
 def load_documents() -> list:
     """Load documents from a PDF and a JSON file."""
-    # Get the directory of the current module
-    pdf_loader = PyPDFLoader("test.pdf")
+
+    #needed to load the file from a subfolder
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    pdf_path = os.path.join(current_dir, '..', 'resources', 'test.pdf')
+    pdf_loader = PyPDFLoader(pdf_path)
     pdf_documents = pdf_loader.load()
 
     #For test purposes only
     #print(f"Loaded {len(pdf_documents)} PDF documents")
 
-    json_loader = JSONLoader(file_path="test.json", jq_schema=".", text_content=False)
+    #needed to load the file from a subfolder
+    json_path = os.path.join(current_dir, '..', 'resources', 'test.json')
+    json_loader = JSONLoader(file_path=json_path, jq_schema=".", text_content=False)
     json_documents = json_loader.load()
 
     #For test purposes only

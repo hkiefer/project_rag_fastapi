@@ -7,7 +7,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 import uvicorn
 
-#import llm and helper modules
+#import costum llm and helper modules
 from src.document_loader import *
 from src.embedding import *
 from src.llm_rag import *
