@@ -8,3 +8,5 @@ langchain-community
 pypdf
 jq
 tiktoken
+jinja2
+python-multipart

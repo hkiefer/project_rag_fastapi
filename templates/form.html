@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG Query</title>
+</head>
+<body>
+    <h1>Ask a Question</h1>
+    <form method="post">
+        <input type="text" name="question" size="60" placeholder="Enter your question" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if result %}
+    <h2>Answer:</h2>
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>

@@ -51,3 +51,9 @@ The system should respond with a JSON object structured as follows:
   "Additional Metadata": "Other relevant information"
 }
 ```
+
+To submit a query in a HTML form interface, run the project via:
+
+```sh
+python3 app_form.py
+```
