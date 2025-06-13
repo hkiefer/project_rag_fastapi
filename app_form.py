@@ -3,13 +3,10 @@ import os
 import json
 from dotenv import load_dotenv
 
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import JSONResponse
-
-from fastapi import Request, Form
+from fastapi import FastAPI, HTTPException, Request, Form
+from fastapi.responses import JSONResponse, HTMLResponse
 from fastapi.templating import Jinja2Templates
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import HTMLResponse
+#from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 
 import uvicorn
