@@ -57,8 +57,16 @@ app = FastAPI()
 @app.get("/query")
 async def query_endpoint(question: str):
     """
-    Endpoint to query the RAG system.
-    Example: GET /query?question="Your question here"
+    API endpoint for querying the RAG system.
+
+    Example usage:
+        GET /query?question="When is the travel starting?"
+
+    Parameters:
+    - question (str): The input question to pass to the RAG pipeline.
+
+    Returns:
+    - JSONResponse: A JSON object with the answer, optionally wrapped or cleaned.
     """
     try:
         output = qa_chain(question)
