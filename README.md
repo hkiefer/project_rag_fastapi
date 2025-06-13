@@ -52,7 +52,7 @@ The system should respond with a JSON object structured as follows:
 }
 ```
 
-To submit a query in a HTML form interface, run the project via:
+To submit a query in a HTML interface form, run the project via:
 
 ```sh
 python3 app_form.py
